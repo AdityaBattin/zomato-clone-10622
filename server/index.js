@@ -27,6 +27,4 @@ zomato.listen(PORT, () => {
       console.log("Server is running, but database connection failed...");
       console.log(error);
     });
-
-  // console.log("Server is running !!!");
 });
