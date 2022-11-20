@@ -15,7 +15,16 @@ const Router = express.Router();
  * Access    Public
  * Method    POST
  */
-// Homework
+
+Router.post("/", async (req, res) => {
+  try {
+    const { _id } = req.params;
+    await validateId(req.params);
+    /* post methord */
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
 
 /**
  * Route     /
